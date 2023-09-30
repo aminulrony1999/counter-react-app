@@ -11,14 +11,8 @@ function App() {
 }
 function Counter(){
   const [value,updatedValue] = useState(22);
-  const increaseValue = () => {
-    const newValue = value + 2;
-    updatedValue(newValue);
-  }
-  const decreaseValue = () => {
-    const newValue = value - 2;
-    updatedValue(newValue);
-  }
+  const increaseValue = () => updatedValue(value + 1);
+  const decreaseValue = () => updatedValue(value - 1);
   return(
     <div>
       <h1>Count: {value}</h1>
