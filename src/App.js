@@ -10,12 +10,15 @@ function App() {
   );
 }
 function Counter(){
-  const abc = useState(0);
-  console.log(abc);
+  const [value,updatedValue] = useState(22);
+  const increaseValue = () => {
+    const newValue = value + 1;
+    updatedValue(newValue);
+  }
   return(
     <div>
-      <h1>Count:</h1>
-      <button>Increase</button>
+      <h1>Count:{value}</h1>
+      <button onClick = {increaseValue}>Increase</button>
       <button>Decrease</button>
     </div>
   )
