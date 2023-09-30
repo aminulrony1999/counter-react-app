@@ -16,6 +16,7 @@ function Counter(){
     <div>
       <h1>Count:</h1>
       <button>Increase</button>
+      <button>Decrease</button>
     </div>
   )
 }
